@@ -26,8 +26,8 @@ function fiboncacciUpTo (x) {
   return '"' + sequence.toString() + '".'
 }
 
-// Console.log testing output
-console.log("x = 6:   -->  " + fiboncacciUpTo(6))
-console.log("x = 24:  -->  " + fiboncacciUpTo(24))
-console.log("x = 100: -->  " + fiboncacciUpTo(100))
-console.log("x = -1:  -->  " + fiboncacciUpTo(-1))
+// // Console.log testing output
+// console.log("x = 6:   -->  " + fiboncacciUpTo(6))
+// console.log("x = 24:  -->  " + fiboncacciUpTo(24))
+// console.log("x = 100: -->  " + fiboncacciUpTo(100))
+// console.log("x = -1:  -->  " + fiboncacciUpTo(-1))
