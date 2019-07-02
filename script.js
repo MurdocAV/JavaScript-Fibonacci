@@ -16,18 +16,21 @@ function fiboncacciUpTo (x) {
   let sum = sequence.slice(-2).reduce((total, num) => {
     return total + num
   })
-  
-  while (sum < x) {
-    sequence.push(sum)
+
+  do {
     sum = sequence.slice(-2).reduce((total, num) => {
         return total + num
     })
-  }
+    if (sum > x)
+      break
+    sequence.push(sum)
+  } while (sum < x)
+
   return '"' + sequence.toString() + '".'
 }
 
-// // Console.log testing output
-// console.log("x = 6:   -->  " + fiboncacciUpTo(6))
-// console.log("x = 24:  -->  " + fiboncacciUpTo(24))
-// console.log("x = 100: -->  " + fiboncacciUpTo(100))
-// console.log("x = -1:  -->  " + fiboncacciUpTo(-1))
+// Console.log testing output
+console.log("x = 6:   -->  " + fiboncacciUpTo(6))
+console.log("x = 24:  -->  " + fiboncacciUpTo(24))
+console.log("x = 100: -->  " + fiboncacciUpTo(100))
+console.log("x = -1:  -->  " + fiboncacciUpTo(-1))
