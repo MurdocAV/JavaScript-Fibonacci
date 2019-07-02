@@ -13,9 +13,6 @@
 // Function Returns fibonacci number unitl the given parameter x
 function fiboncacciUpTo (x) {
   let sequence = [1,1]
-  let sum = sequence.slice(-2).reduce((total, num) => {
-    return total + num
-  })
 
   do {
     sum = sequence.slice(-2).reduce((total, num) => {
